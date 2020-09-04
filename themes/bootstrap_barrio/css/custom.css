@@ -1,0 +1,18 @@
+/* ---------- Customization ----------- */
+
+.highlighted {
+  color: #FFFFFF;
+}
+
+.btn-custom, .btn-custom a {
+  color: #FFFFFF !important;
+  border-radius: 15px;
+}
+
+.highlighted .jumbotron {
+  background-color: transparent !important;
+}
+
+.highlighted #word-custom {
+  color: #FFA000 !important;
+}

@@ -40,6 +40,7 @@ global-styling:
       css/components/progress.css: { weight: -10 }
     theme:
       css/print.css: { media: print }
+      css/custom.css: {}
   dependencies:
     - core/jquery
     - core/jquery.once
