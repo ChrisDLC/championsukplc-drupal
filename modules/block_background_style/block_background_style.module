@@ -100,7 +100,7 @@ function block_background_style_preprocess_block(&$variables) {
       if (!empty($file)) {
         $uri = $file->getFileUri();
         $uri = str_replace("public://", "/sites/default/files/", $uri);
-        $style_image = 'background-image:url(' . $uri . ') ;background-origin: content-box;background-repeat: no-repeat;background-size: 100%;';
+        $style_image = "background-image:url('/championsukplc-drupal" . $uri . "') ;background-origin: content-box;background-repeat: no-repeat;background-size: 100%;";
       }
     }
     if ($block && $inline_style = $block->getThirdPartySetting('block_background_style', 'inline_style')) {
