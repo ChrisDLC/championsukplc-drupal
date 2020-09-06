@@ -16,3 +16,16 @@
 .highlighted #word-custom {
   color: #FFA000 !important;
 }
+
+.site-footer__top ul .menu {
+  padding-left: 0;
+  list-style: none;
+}
+
+.site-footer__top .nav-item a {
+  color: white !important;
+}
+
+.site-footer__top .menu a {
+  color: #B2B2B2 !important;
+}
