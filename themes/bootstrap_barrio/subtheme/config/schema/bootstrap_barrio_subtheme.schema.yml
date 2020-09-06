@@ -151,6 +151,12 @@ bootstrap_barrio_region_clean_footer_fifth:
 bootstrap_barrio_region_class_footer_fifth:
   type: text
   label: 'Classes for Footer fifth region'
+bootstrap_barrio_region_clean_footer_bottom:
+  type: text
+  label: 'Clean wrapper for Footer bottom region'
+bootstrap_barrio_region_class_footer_bottom:
+  type: text
+  label: 'Classes for Footer bottom region'
 
 # Sidebar position.
 # ----------------------------
