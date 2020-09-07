@@ -1,0 +1,44 @@
+/* ---------- Customization ----------- */
+
+.highlighted {
+  color: #FFFFFF;
+}
+
+.btn-custom, .btn-custom a {
+  color: #FFFFFF !important;
+  border-radius: 15px;
+}
+
+.highlighted .jumbotron {
+  background-color: transparent !important;
+}
+
+.highlighted #word-custom {
+  color: #FFA000 !important;
+}
+
+.site-footer__top ul .menu {
+  padding-left: 0;
+  list-style: none;
+}
+
+.site-footer__top .nav-item a {
+  color: white !important;
+}
+
+.site-footer__top .menu a {
+  color: #B2B2B2 !important;
+}
+
+@media screen and (min-width: 970px) {
+  .view-front-page-content-view .view-row-pair div:first-child {
+    left: 50%;
+  }
+  .view-front-page-content-view .view-row-pair div:last-child {
+    right: 50%;
+  }
+}
+
+.view-front-page-content-view .view-row-pair {
+  background-color: #D6D6D6;
+}

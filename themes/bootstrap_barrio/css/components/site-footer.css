@@ -14,7 +14,6 @@
   .site-footer__top .region {
     float: left; /* LTR */
     position: relative;
-    width: 50%;
   }
   [dir="rtl"] .site-footer__top .region {
     float: right;
@@ -44,7 +43,6 @@
 }
 @media all and (min-width: 851px) {
   .site-footer__top .region {
-    width: 24%;
     padding: 0 0.65%;
   }
   .site-footer__top .region:first-child {
