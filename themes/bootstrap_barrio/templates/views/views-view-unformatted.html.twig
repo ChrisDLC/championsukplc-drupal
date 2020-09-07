@@ -19,12 +19,18 @@
   <h3>{{ title }}</h3>
 {% endif %}
 {% for row in rows %}
+  {% set parity = (loop.index % 2 == 0) ? 'pair' : 'impair' %}
   {%
     set row_classes = [
-      default_row_class ? 'views-row',
+      default_row_class ? "views-row view-row-#{parity}",
     ]
   %}
+
   <div{{ row.attributes.addClass(row_classes) }}>
-    {{ row.content }}
+    <div class="container">
+      <div class="row">
+        {{ row.content }}
+      </div>
+    </div>
   </div>
 {% endfor %}

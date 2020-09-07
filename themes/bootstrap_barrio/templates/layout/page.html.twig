@@ -135,12 +135,6 @@
         <div id="main" class="{{ container }}">
           {{ page.breadcrumb }}
           <div class="row row-offcanvas row-offcanvas-left clearfix">
-              <main{{ content_attributes }}>
-                <section class="section">
-                  <a id="main-content" tabindex="-1"></a>
-                  {{ page.content }}
-                </section>
-              </main>
             {% if page.sidebar_first %}
               <div{{ sidebar_first_attributes }}>
                 <aside class="section" role="complementary">
@@ -172,26 +166,28 @@
       {% block footer %}
         <div class="{{ container }}">
           {% if page.footer_first or page.footer_second or page.footer_third or page.footer_fourth or page.footer_fifth %}
-            <div class="site-footer__top clearfix row">
-              {% if page.footer_first %}
-                <div class="col-2 col-md">{{ page.footer_first }}</div>
-              {% endif %}
-              {% if page.footer_second %}
-                <div class="col-2 col-md">{{ page.footer_second }}</div>
-              {% endif %}
-              {% if page.footer_third %}
-                <div class="col-2 col-md">{{ page.footer_third }}</div>
-              {% endif %}
-              {% if page.footer_fourth %}
-                <div class="col-2 col-md">{{ page.footer_fourth }}</div>
-              {% endif %}
-              {% if page.footer_fifth %}
-                <div class="col-2 col-md offset-md-2">{{ page.footer_fifth }}</div>
-              {% endif %}
+            <div class="site-footer__top clearfix container">
+              <div class="row">
+                {% if page.footer_first %}
+                  <div class="col-2 col-md">{{ page.footer_first }}</div>
+                {% endif %}
+                {% if page.footer_second %}
+                  <div class="col-2 col-md">{{ page.footer_second }}</div>
+                {% endif %}
+                {% if page.footer_third %}
+                  <div class="col-2 col-md">{{ page.footer_third }}</div>
+                {% endif %}
+                {% if page.footer_fourth %}
+                  <div class="col-2 col-md">{{ page.footer_fourth }}</div>
+                {% endif %}
+                {% if page.footer_fifth %}
+                  <div class="col-2 col-md offset-md-2">{{ page.footer_fifth }}</div>
+                {% endif %}
+              </div>
             </div>
           {% endif %}
           {% if page.footer_bottom %}
-            <div class="site-footer__bottom">
+            <div class="site-footer__bottom container">
               {{ page.footer_bottom }}
             </div>
           {% endif %}
